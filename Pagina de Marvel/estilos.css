@@ -54,6 +54,7 @@ body::-webkit-scrollbar-thumb {
 .contenedor header img {
   width: 100%;
   height: 110vh;
+  object-fit: cover;
 }
 
 .contenedor header nav ul {
@@ -119,6 +120,7 @@ body::-webkit-scrollbar-thumb {
   -o-transition: all 0.5s linear;
   transition: all 0.5s linear;
   margin: 20px 0;
+  object-fit: cover;
 }
 
 .contenedor main .img-1 img:hover,
