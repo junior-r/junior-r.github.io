@@ -1,0 +1,325 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --orange: #f0a500;
+    --blue: #0000ff;
+    --yellow: #ffff00;
+}
+
+a{
+    text-decoration: none;
+}
+
+body::-webkit-scrollbar{
+    width: 7px;
+    background-color: var(--black);
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: var(--orange);
+    border-radius: 10px;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 2px solid #000;
+    background: url(https://i.pinimg.com/originals/8d/f4/d5/8df4d5c2f8eaffcef9cf17de8ff315ff.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header .nav {
+    padding: 20px;
+    width: 100%;
+    background: #FF0099;
+    background: -webkit-linear-gradient(to left, #493240, #FF0099);
+    background: linear-gradient(to left, #493240, #FF0099);
+    border-bottom: 1px solid #000;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .7);
+}
+
+.header .nav a{
+    padding: 0 30px;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+}
+
+.header .bienvenida {
+    font-family: 'Itim', cursive;
+    position: relative;
+    top: 100px;
+    color: var(--white);
+    font-size: 1.5em;
+    background: rgba(0, 0, 0, .7);
+}
+
+.header .imagen__perfil{
+    width: 100%;
+    height: 350px;
+}
+
+.header .imagen__perfil img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    filter: grayscale(25);
+    border-radius: 100%;
+    position: relative;
+    top: calc(50% - 1.5em);
+    border: 5px solid var(--black);
+    transition: ease 0.5s all;
+}
+
+.header .imagen__perfil img:hover{
+    filter: none;
+}
+
+.contenedor {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-image: url(https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-attachment: fixed;
+}
+
+.contenedor .contenedor__texto {
+    text-align: center;
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, .7);
+    padding: 20px;
+    height: 100%;
+    line-height: 1.5;
+}
+
+.contenedor .contenedor__texto h1{
+    color: var(--white);
+    font-size: 3em;
+    margin: 10px;
+}
+
+.contenedor .contenedor__texto hr{
+    border: 1px solid var(--orange);
+}
+
+.contenedor .contenedor__texto .icon-location2{
+    position: absolute;
+    top: 130px;
+    left: 37%;
+    color: var(--yellow);
+    font-size: 2em;
+}
+
+.contenedor .contenedor__texto h3{
+    color: var(--white);
+    margin: 10px;
+    font-size: 2em;
+}
+
+.contenedor .contenedor__texto .descripcion {
+    width: 70%;
+    margin: 40px auto;
+    color: var(--white);
+    font-size: 3em;
+}
+
+.contenedor .contenedor__texto .img__lenguajes{
+    width: 100%;
+    margin: 20px 0 0 0;
+}
+
+.contenedor .contenedor__texto .img__lenguajes img{
+    width: 25%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50px;
+    margin: 0 20px;
+    filter: blur(2px);
+    transition: 0.3s ease all;
+}
+
+.contenedor .contenedor__texto .img__lenguajes img:hover{
+    filter: blur(0px);
+    border-radius: 0;
+}
+
+.footer {
+    width: 100%;
+    max-width: 1400px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.footer h3{
+    border-bottom: 2px solid var(--black);
+    font-size: 2em;
+}
+
+.footer ul{
+    margin: 30px;
+}
+
+.footer .icon-whatsapp,
+    .footer .icon-facebook2,
+    .footer .icon-instagram,
+    .footer .icon-github{
+    font-size: 2em;
+    padding: 20px;
+}
+
+.footer .icon-whatsapp{
+    background: #4dc247;
+    color: var(--white);
+    border-radius: 100%;
+    box-shadow: 0px 3px 10px rgb(0 0 0 / 25%);
+}
+
+.footer .icon-facebook2{
+    background: #3b5998;
+    color: var(--white);
+    border-radius: 100%;
+    box-shadow: 0px 3px 10px rgb(0 0 0 / 25%);
+}
+
+.footer .icon-instagram{
+    color: var(--white);
+    background: #d6249f;
+    background: radial-gradient( circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90% );
+    box-shadow: 0px 3px 10px rgb(0 0 0 / 25%);
+    border-radius: 100%;
+}
+
+.footer .icon-github{
+    color: var(--white);
+    background: rgba(0, 0, 0, .7);
+    border-radius: 100%;
+    border: 1px solid var(--black);
+    box-shadow: 0px 3px 10px rgb(0 0 0 / 25%);
+}
+
+.footer p{
+    font-weight: bold;
+}
+
+.footer .ir__arriba{
+    border: none;
+    background-color: var(--black);
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 30px;
+    transition: 1s ease all;
+}
+
+.footer .ir__arriba:hover{
+    background-color: var(--white);
+    border: 1px solid var(--black);
+}
+
+.footer .ir__arriba a{
+    color: var(--white);
+    font-size: 1.5em;
+    transition: 1s ease all;
+}
+
+.footer .ir__arriba:hover a{
+    font-size: 2em;
+    color: var(--black);
+}
+
+@media screen and (max-width: 950px) {
+    .contenedor .contenedor__texto .img__lenguajes img{
+        display: block;
+        width: 80%;
+        margin: 50px auto;
+        height: 750px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .header .bienvenida {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .header .nav{
+        text-align: start;
+    }
+
+    .header .nav a{
+        display: block;
+        line-height: 2;
+    }
+
+    .header .imagen__perfil img{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .header .bienvenida {
+        font-size: 0.625em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contenedor .contenedor__texto .img__lenguajes img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .footer ul a{
+        display: inline-block;
+        margin: 20px
+    }
+
+    .footer .icon-whatsapp,
+    .footer .icon-facebook2,
+    .footer .icon-instagram,
+    .footer .icon-github{
+    font-size: 2em;
+    padding: 0px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .contenedor .contenedor__texto h1, .contenedor .contenedor__texto h3, .contenedor .contenedor__texto .descripcion, .footer h3 {
+        font-size: 1em;
+    }
+
+    .header .imagen__perfil img{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .header .nav a{
+        font-size: 1em;
+    }
+
+    .header .imagen__perfil img{
+        width: 120px;
+        height: 120px;
+    }
+}
