@@ -285,6 +285,7 @@ body::-webkit-scrollbar-thumb{
     .header .imagen__perfil img{
         width: 250px;
         height: 250px;
+        filter: grayscale(0);
     }
 }
 
@@ -300,7 +301,7 @@ body::-webkit-scrollbar-thumb{
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
     .footer ul a{
         display: inline-block;
         margin: 20px
@@ -309,14 +310,18 @@ body::-webkit-scrollbar-thumb{
     .footer .icon-whatsapp,
     .footer .icon-facebook2,
     .footer .icon-instagram,
-    .footer .icon-github{
+    .footer .icon-github,
+    .footer .icon-sobre{
     font-size: 2em;
     padding: 0px;
     }
 }
 
 @media screen and (max-width: 320px) {
-    .contenedor .contenedor__texto h1, .contenedor .contenedor__texto h3, .contenedor .contenedor__texto .descripcion, .footer h3 {
+    .contenedor .contenedor__texto h1, 
+    .contenedor .contenedor__texto h3, 
+    .contenedor .contenedor__texto .descripcion, 
+    .footer h3 {
         font-size: 1em;
     }
 
