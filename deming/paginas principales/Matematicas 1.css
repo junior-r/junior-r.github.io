@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  background: #0b486b;
+  background: -webkit-linear-gradient(to right, #f56217, #0b486b);
+  background: linear-gradient(to right, #f56217, #0b486b);
+  height: 500px;
+}
+
+body::-webkit-scrollbar{
+  width: 7px;
+}
+
+body::-webkit-scrollbar-thumb{
+  background: #faa500;
+}
+
+header {
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.barra1 {
+  background-color: #ff0000;
+  font-size: 30px;
+  text-align: center;
+}
+
+.barra1 a {
+  color: #ffffff;
+  text-decoration: none;
+  position: absolute;
+  left: 0;
+  transition: all 0.4s linear;
+}
+
+.barra1 a:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.logo {
+  height: 95px;
+}
+
+.contenedor {
+  height: auto;
+  padding-top: 10rem;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.contenedor .conjuntos,
+.contenedor .conjuntos-numericos,
+.contenedor .potencias,
+.contenedor .ecuaciones,
+.contenedor .funciones,
+.contenedor .contactos {
+  width: 30%;
+  float: left;
+  margin: 1.25em 0;
+}
+
+.contenedor .conjuntos h2,
+.conjuntos-numericos h2,
+.contenedor .potencias h2,
+.ecuaciones h2,
+.funciones h2,
+.contactos h2 {
+  color: #fff;
+  font-size: 3em;
+}
+
+.contenedor .conjuntos h2 a,
+.conjuntos-numericos h2 a,
+.contenedor .potencias h2 a,
+.ecuaciones h2 a,
+.funciones h2 a,
+.contactos h2 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.contenedor .conjuntos ul,
+.conjuntos-numericos ul,
+.potencias ul,
+.ecuaciones ul,
+.funciones ul,
+.contactos ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.contenedor .conjuntos ul li a,
+.conjuntos-numericos ul li a,
+.contenedor .potencias ul li a,
+.ecuaciones ul li a,
+.funciones ul li a,
+.contactos ul li a {
+  color: #fff;
+  line-height: 1.5;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.contenedor img {
+  width: 70%;
+  border-radius: 30px;
+  height: 300px;
+  object-fit: cover;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  margin: 1.25em 0;
+}
+
+.contenedor img:hover {
+  box-shadow: 3px 3px 10px #fff;
+  border-radius: 0;
+}
+
+.icon.icon-whatsapp {
+  background: #4dc247;
+  border-radius: 50px;
+  color: #fff;
+}
+
+.icon.icon-facebook {
+  color: #3b5998;
+  background-color: #fff;
+}
+
+.icon.icon-instagram {
+  color: #fff;
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.icon.icon-location {
+  color: #ff0000;
+  background: radial-gradient(#000, transparent);
+  border-radius: 100%;
+}
+
+.footer {
+  background-color: #f2f2f2;
+  color: #000000;
+  padding: 4rem 0;
+  text-align: center;
+  border-top: 2px solid #000000;
+  box-shadow: inset 0 0 5rem rgba(0, 0, 150, 0.9);
+  height: 176px;
+  font-family: fantasy;
+}
+
+@media only screen and (max-width: 950px) {
+  .contenedor {
+    padding-top: 10rem;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .contenedor .conjuntos,
+  .contenedor .conjuntos-numericos,
+  .contenedor .potencias,
+  .contenedor .ecuaciones,
+  .contenedor .funciones,
+  .contenedor .contactos {
+    float: none;
+    width: 90%;
+    margin: 1.25em auto;
+    text-align: center;
+  }
+
+  .contenedor img{
+    width: 90%;
+  }
+
+  .contenedor {
+    padding-top: 7rem;
+    margin: 0 30px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+}
+
+@media only screen and (max-width: 360px) {
+}

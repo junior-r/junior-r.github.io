@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  background: #b92b27;
+  background: -webkit-linear-gradient(to right, #1565c0, #b92b27);
+  background: linear-gradient(to right, #1565c0, #b92b27);
+}
+
+.barra1 {
+  background-color: #ff0000;
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.cont-menu {
+  width: 100%;
+  height: auto;
+  box-shadow: 5px 5px 10px #000000;
+  position: fixed;
+  background-color: #ffffff;
+}
+
+.logo {
+  height: 95px;
+  margin: 0;
+  float: left;
+}
+
+.contenedor {
+  height: auto;
+  padding-top: 10rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.contenedor ul {
+  margin: 30px;
+  list-style: none;
+  padding: 10px;
+}
+
+.contenedor ul li {
+  width: 26%;
+}
+
+.contenedor ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 40px;
+  color: #fff;
+}
+
+.contenedor ul ul a {
+  margin: 25px 40px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  font-size: 1.5em;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.contenedor ul ul a:hover {
+  color: #000;
+  font-size: 2em;
+}
+
+.contenedor ul ul {
+  margin: 0;
+  display: table-cell;
+  float: left;
+}
+
+.contenedor > ul img {
+  width: 55%;
+  height: 300px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 2px #000;
+}
+
+/*CONTENIDO DE EL CONTENEDOR*/
+.contenedor figure img {
+  width: 28%;
+  height: 350px;
+  margin: 30px 20px;
+  display: inline-block;
+  border-radius: 100%;
+  transition: border-radius 0.5s;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.contenedor figure img:hover {
+  border-radius: 0;
+}
+
+/*FINALIZA EL CONTENIDO DE EL CONTENEDOR*/
+
+footer {
+  background-color: #f2f2f2;
+  color: #000000;
+  padding: 4rem;
+  text-align: center;
+  border-top: 2px solid #000;
+  box-shadow: inset 0 0 5rem rgba(0, 0, 150, 0.5);
+}
+
+@media only screen and (max-width: 1486px) {
+  .contenedor {
+    padding-top: 14rem;
+  }
+
+  .logo {
+    float: none;
+  }
+  .menu {
+    padding-top: 13px;
+  }
+  .cont-menu {
+    height: 214px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .barra1 {
+    font-size: 20px;
+  }
+
+  .cont-menu {
+    height: auto;
+  }
+
+  .menu {
+    margin: 0;
+    padding-left: 0;
+    text-align: initial;
+    width: auto;
+  }
+
+  .cont-menu .menu a {
+    display: block;
+    font-size: 15px;
+  }
+
+  .contenedor {
+    padding-top: 21rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .contenedor figure img {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .logo {
+    width: 360px;
+  }
+
+  .contenedor {
+    padding-top: 22rem;
+  }
+
+  .contenedor p {
+    font-size: 15px;
+  }
+
+  .contenedor figure img {
+    display: block;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .cont-menu img {
+    width: 300px;
+  }
+}

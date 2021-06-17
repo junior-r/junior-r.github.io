@@ -1,0 +1,251 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  scroll-behavior: smooth;
+  width: 100%;
+  background: #b92b27;
+  background: -webkit-linear-gradient(to right, #1565c0, #b92b27);
+  background: linear-gradient(to right, #1565c0, #b92b27);
+}
+
+body::-webkit-scrollbar{
+  width: 7px;
+}
+
+body::-webkit-scrollbar-thumb{
+  background: #faa500;
+}
+
+.barra1 {
+  background-color: #ff0000;
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.cont-menu {
+  width: 100%;
+  height: auto;
+  box-shadow: 5px 5px 10px #000000;
+  position: fixed;
+  background-color: #ffffff;
+}
+
+.logo {
+  height: 95px;
+  margin: 0;
+  width: 100%;
+  object-fit: contain;
+}
+
+.contenedor {
+  height: auto;
+  padding-top: 10rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.ir-arriba{
+  display: none;
+  padding: 20px;
+  background: linear-gradient(-90deg, #d38312, #a83279);
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.contenedor .primero,
+.contenedor .segundo,
+.contenedor .tercero,
+.contenedor .cuarto,
+.contenedor .quinto,
+.contenedor .sexto {
+  margin: 0 0 1em 0;
+}
+
+.contenedor .primero h2,
+.contenedor .segundo h2,
+.contenedor .tercero h2,
+.contenedor .cuarto h2,
+.contenedor .quinto h2,
+.contenedor .sexto h2 {
+  font-size: 3em;
+  cursor: pointer;
+  width: 30%;
+}
+
+.contenedor .primero h2 a,
+.contenedor .segundo h2 a,
+.contenedor .tercero h2 a,
+.contenedor .cuarto h2 a,
+.contenedor .quinto h2 a,
+.contenedor .sexto h2 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.contenedor .primero ul,
+.contenedor .segundo ul,
+.contenedor .tercero ul,
+.contenedor .cuarto ul,
+.contenedor .quinto ul,
+.contenedor .sexto ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 5px 20px;
+  float: left;
+  width: 28%;
+}
+
+.contenedor .primero ul li,
+.contenedor .segundo ul li,
+.contenedor .tercero ul li,
+.contenedor .cuarto ul li,
+.contenedor .quinto ul li,
+.contenedor .sexto ul li {
+  font-size: 1.5em;
+  width: 100%;
+  margin: 1em 0;
+}
+
+.contenedor .primero ul li a,
+.contenedor .segundo ul li a,
+.contenedor .tercero ul li a,
+.contenedor .cuarto ul li a,
+.contenedor .quinto ul li a,
+.contenedor .sexto ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contenedor .primero img,
+.contenedor .segundo img,
+.contenedor .tercero img,
+.contenedor .cuarto img,
+.contenedor .quinto img,
+.contenedor .sexto img {
+  width: 70%;
+  height: 300px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px #000;
+  object-fit: cover;
+}
+
+.icon.icon-whatsapp {
+  background: #4dc247;
+  border-radius: 50px;
+  color: #fff;
+}
+
+.icon.icon-facebook {
+  color: #3b5998;
+  background-color: #fff;
+}
+
+.icon.icon-instagram {
+  color: #fff;
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
+
+.icon.icon-location {
+  color: #ff0000;
+  background: radial-gradient(#000, transparent);
+  border-radius: 100%;
+}
+
+footer {
+  background-color: #f2f2f2;
+  color: #000000;
+  padding: 4rem;
+  text-align: center;
+  border-top: 2px solid #000;
+  box-shadow: inset 0 0 5rem rgba(0, 0, 150, 0.5);
+}
+
+@media only screen and (max-width: 1486px) {
+  .contenedor {
+    padding-top: 14rem;
+  }
+
+  .menu {
+    padding-top: 13px;
+  }
+  .cont-menu {
+    height: 214px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .barra1 {
+    font-size: 20px;
+  }
+
+  .cont-menu {
+    height: auto;
+  }
+
+  .menu {
+    margin: 0;
+    padding-left: 0;
+    text-align: initial;
+    width: auto;
+  }
+
+  .cont-menu .menu a {
+    display: block;
+    font-size: 15px;
+  }
+
+  .contenedor {
+    padding-top: 21rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .contenedor figure img {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .contenedor {
+    padding-top: 22rem;
+  }
+
+  .contenedor p {
+    font-size: 15px;
+  }
+
+  .contenedor figure img {
+    display: block;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 270px) {
+  .contenedor .primero h2,
+  .contenedor .segundo h2,
+  .contenedor .tercero h2,
+  .contenedor .cuarto h2,
+  .contenedor .quinto h2,
+  .contenedor .sexto h2 {
+    font-size: 2em;
+  }
+}
