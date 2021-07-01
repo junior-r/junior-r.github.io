@@ -197,6 +197,10 @@ body::-webkit-scrollbar-thumb {
   margin: 10px 10px;
 }
 
+.contenedor footer nav ul {
+  list-style: none;
+} 
+
 .contenedor footer nav ul a {
   color: var(--color-1);
   text-decoration: none;
